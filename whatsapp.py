@@ -5,7 +5,9 @@ contry_code = int(input('Enter contry code without "+" : '))
 number = int(input('Enter Number'))
 number_of_message = int(input('How many messege you want to send : '))
 messege = input('Enter messege : ')
-driver=webdriver.Chrome(executable_path=r"C:\Users\RAKESH\Desktop\chromedriver.exe")
+driver_path = input('Enter Webdriver Path')
+driver=webdriver.Chrome(executable_path=driver_path)
+
 link = 'https://api.whatsapp.com/send/?phone='+str(contry_code)+str(number)+'&text&app_absent=0'
 driver.get(link)
 

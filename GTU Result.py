@@ -13,7 +13,8 @@ file_name = input('Enter File name : ')
 ################################################test
 
 #define driver path
-driver = webdriver.Chrome(executable_path=r'C:\Users\RAKESH\Desktop\chromedriver.exe')
+driver_path = input('Enter Webdriver Path')
+driver=webdriver.Chrome(executable_path=driver_path)
 
 driver.get('https://www.students.gtu.ac.in/')
 
